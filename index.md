@@ -8,11 +8,11 @@ You can find all my personal projects at <https://github.com/chris-kirkham/>, an
 
 ## Projects
 <div>
-  <a href="boids.md" title="Boids">
-    <img src="images/boids/README_1.gif" style="float: center; width: 30%; margin-left: 1%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <a href="boids.html" title="Boids">
+    <img src="images/boids/README_1.gif" style="float: center; width: 50%; margin-left: 1%; margin-right: 1%; margin-bottom: 0.5em;"/>
   </a>
-  <a href="endlessRoller.md" title="Endless Roller">
-    <img src="images/endless-roller/README_Camera.gif" style="float:center; width: 30%; margin-left: 1%; margin-right: 1%; margin-bottom:     0.5em;"/>
+  <a href="endlessRoller.html" title="Endless Roller">
+    <img src="images/endless-roller/README_Camera.gif" style="float:center; width: 50%; margin-left: 1%; margin-right: 1%; margin-bottom:     0.5em;"/>
   </a>
   <p style="clear: both;"></p>
 </div>

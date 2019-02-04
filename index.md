@@ -8,4 +8,8 @@ You can find all my personal projects at <https://github.com/chris-kirkham/>, an
 
 ## Projects
 | [<img src="images/boids.gif">](boids.md) | [<img src="images/endless-roller.gif">](endlessRoller.md) |
-|:----:|:----:|
+<div>
+  <img src="images/boids/README_1.gif" style="float: center; width: 30%; margin-left: 1%; margin-right: 1%; margin-bottom: 0.5em;"/>(boids.md)
+  <img src="images/endless-roller/README_Camera.gif" style="float:center; width: 30%; margin-left: 1%; margin-right: 1%; margin-bottom: 0.5em;"/>(endlessRoller.md)
+  <p style="clear: both;"></p>
+</div>

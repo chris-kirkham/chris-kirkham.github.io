@@ -1,4 +1,4 @@
-# Endless-Roller
+# endless-roller
 #### Endless runner-style game with a ball and procedural terrain generation, made in Unity
 
 | <img src="images/endless-roller/README_PerlinNoise.gif"> | <img src="images/endless-roller/README_Cubes.gif"> | <img src="images/endless-roller/README_Camera.gif"> |

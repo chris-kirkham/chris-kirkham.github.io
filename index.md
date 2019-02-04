@@ -7,5 +7,5 @@ As a programmer, I am interested in AI, especially intelligent agents and machin
 You can find all my personal projects at https://github.com/chris-kirkham/, and email me at <chris.kirkham11@gmail.com>. 
 
 ## Projects
-| [<img src="images/boids.gif">](boids.md) | [<img src="images/endless-roller.gif">](endless-roller.md) |
+| [<img src="images/boids.gif">](boids.md) | [<img src="images/endless-roller.gif">](endlessRoller.md) |
 |:----:|:----:|

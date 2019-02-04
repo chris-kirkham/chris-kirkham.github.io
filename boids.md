@@ -3,6 +3,11 @@
 | <img src="images/boids/README_1.gif"> | <img src="images/boids/README_2.gif"> | <img src="images/boids/README_3.gif"> |
 |:----:|:----:|:----:|
 
+<div>
+  <img src="images/boids/README_1.gif"/>
+  <img src="images/boids/README_2.gif"/>
+</div>
+
 ## About
 This is a Unity implementation of Craig Reynold's *Boids* algorithm (<http://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/>). Essentially, the system is formed of several "boid" particles which react dynamically to each other and to the environment in a manner similar to a flock of birds or a school of fish.
 

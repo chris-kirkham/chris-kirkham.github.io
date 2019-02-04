@@ -1,7 +1,5 @@
 # boids
 #### An implementation of the Boids algorithm (Reynolds, C. W. (1987) Flocks, Herds, and Schools: A Distributed Behavioral Model) for Unity.
-| <img src="images/boids/README_1.gif"> | <img src="images/boids/README_2.gif"> | <img src="images/boids/README_3.gif"> |
-|:----:|:----:|:----:|
 
 <div>
   <img src="images/boids/README_1.gif"/>

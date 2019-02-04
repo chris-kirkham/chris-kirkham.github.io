@@ -1,8 +1,11 @@
 # endless-roller
 #### Endless runner-style game with a ball and procedural terrain generation, made in Unity
-
-| <img src="images/endless-roller/README_PerlinNoise.gif"> | <img src="images/endless-roller/README_Cubes.gif"> | <img src="images/endless-roller/README_Camera.gif"> |
-|:----:|:----:|:----:|
+<div>
+  <img src="images/endless-roller/README_PerlinNoise.gif" style="float: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <img src="images/endless-roller/README_Cubes.gif" style="float:center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <img src="images/endless-roller/README_Camera.gif" style="float:center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <p style="clear: both;"></p>
+</div>
 
 ## About
 Initially a test of infinite procedural terrain generation in Unity, this may turn into a more fleshed-out game in the future. Currently, the game generates terrain around a ball as it moves about, with the option to reset the position of objects to the origin to avoid eventual floating-point precision errors.

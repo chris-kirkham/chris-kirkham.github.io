@@ -2,9 +2,9 @@
 #### An implementation of the Boids algorithm (Reynolds, C. W. (1987) Flocks, Herds, and Schools: A Distributed Behavioral Model) for Unity.
 
 <div>
-  <img src="images/boids/README_1.gif" style="float:left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
-  <img src="images/boids/README_2.gif" style="float:left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
-  <img src="images/boids/README_3.gif" style="float:left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <img src="images/boids/README_1.gif" style="float: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <img src="images/boids/README_2.gif" style="float:center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
+  <img src="images/boids/README_3.gif" style="float:center; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"/>
   <p style="clear: both;"></p>
 </div>
 

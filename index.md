@@ -11,10 +11,10 @@ You can find all my personal projects at <https://github.com/chris-kirkham/>, an
 ## Projects
 <div style="position:relative; height:100%; width:100%;">
   <a href="boids.html" title="Boids">
-    <img src="images/boids/README_1.gif" style="float: center; width: 42%; margin-left: 0%; margin-right: 1%; margin-bottom: 0.5em;"/>
+    <img src="images/boids/README_1.gif" style="float: center; width: 48%; margin-left: 0%; margin-right: 1%; margin-bottom: 0.5em;"/>
   </a>
   <a href="endlessRoller.html" title="Endless Roller">
-    <img src="images/endless-roller/README_Camera.gif" style="float:center; width: 42%; margin-left: 1%; margin-right: 0%; margin-bottom:     0.5em;"/>
+    <img src="images/endless-roller/README_Camera.gif" style="float:center; width: 48%; margin-left: 1%; margin-right: 0%; margin-bottom:     0.5em;"/>
   </a>
   <p style="clear: both;"></p>
 </div>

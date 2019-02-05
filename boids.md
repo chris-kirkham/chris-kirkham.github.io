@@ -46,4 +46,4 @@ The boids may follow a 3D target controlled by the user's mouse input, and will 
 
 #### [back](index.html)
 
-###### Christopher Kirkham, 2019
+##### Christopher Kirkham, 2019

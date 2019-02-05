@@ -18,3 +18,5 @@ You can find all my personal projects at <https://github.com/chris-kirkham/>, an
   </a>
   <p style="clear: both;"></p>
 </div>
+
+###### Christopher Kirkham, 2019

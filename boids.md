@@ -8,7 +8,7 @@
   <p style="clear: both;"></p>
 </div>
 
-## <p style=text-align: center>[PLAY](projects/boids/game.html)</p>
+# [PLAY](projects/boids/game.html)
 
 ## About
 This is a Unity implementation of [Craig Reynold's *Boids* algorithm](http://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/). Essentially, the system is formed of several "boid" particles which react dynamically to each other and to the environment in a manner similar to a flock of birds or a school of fish.

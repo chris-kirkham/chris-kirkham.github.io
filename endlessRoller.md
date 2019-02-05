@@ -21,6 +21,6 @@ The base generation script, *TerrainGenerator.cs*, is attached to an empty GameO
 ### Camera
 The camera is designed to follow the ball quite lazily, keeping it onscreen but not forcing it to be close or central on the screen. This is done via extensive use of lerping, and I think the overall effect is pleasingly dynamic. The camera will also try to stay a certain distance from the terrain at all times.
 
-#### [back](index.html)
+### [back home](index.html)
 
 ##### Christopher Kirkham, 2019

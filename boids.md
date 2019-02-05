@@ -1,4 +1,4 @@
-<div style="text-align: right> back </div>
+##### [back](index.html)
 # boids
 #### An implementation of the Boids algorithm (Reynolds, C. W. (1987) Flocks, Herds, and Schools: A Distributed Behavioral Model) for Unity.
 

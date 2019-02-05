@@ -19,4 +19,4 @@ You can find all my personal projects at <https://github.com/chris-kirkham/>, an
   <p style="clear: both;"></p>
 </div>
 
-###### Christopher Kirkham, 2019
+##### Christopher Kirkham, 2019

@@ -1,4 +1,3 @@
-##### [back](index.html)
 # boids
 #### An implementation of the Boids algorithm (Reynolds, C. W. (1987) Flocks, Herds, and Schools: A Distributed Behavioral Model) for Unity.
 
@@ -45,5 +44,6 @@ Unlike boids, obstacles can be any size and shape, so the method used for boid a
 ### Cursor follow
 The boids may follow a 3D target controlled by the user's mouse input, and will move around obstacles to reach this target.
 
+#### [back](index.html)
 
 ###### Christopher Kirkham, 2019

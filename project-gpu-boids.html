@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<title>Christopher Kirkham</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&family=Fredoka+One&family=Spartan&family=Vollkorn">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+    @import url('./styles.css');
+</style>
+
+<body>
+    <div class="content">
+        <div id="project-video">
+            <video playsinline autoplay muted loop width="100%"><source src="../images/boids-video.mp4" type="video/mp4"></video>
+        </div>   
+        
+        <div id="project-heading">
+            <h1 style="font-size: 54pt;">GPU Boids</h1>
+            <p id="project-page-subheading">An implementation of the Boids algorithm (Reynolds, C. W. (1987) Flocks, Herds, and Schools: A Distributed Behavioral Model) for Unity. Utilises compute shaders to significantly improve performance vs. a typical CPU-based implementation.</p>
+        </div>
+
+        <div id="project-links">
+            <div style="text-align: center"><a href="https://github.com/chris-kirkham/boids">Source on Github</a></div>
+        </div>
+        
+        <div id="project-about">
+            <h2>About</h2>
+            <p>This is a Unity implementation of Craig Reynold's <a href="http://www.cs.toronto.edu/~dt/siggraph97-course/cwr87/" style="font-size: 14pt; font-weight: 400;">Boids</a> algorithm. Essentially, the system is formed of several "boid" agents which react dynamically to each other and to the environment in a manner similar to a flock of birds or a school of fish. This implementation also includes "affectors", which add forces to boids within their range, and cursor following, which causes boids to follow a 3D cursor in the game world.</p>
+        </div>
+    
+        <div id="project-features">
+            <h2>Features</h2>
+            <h3>Reaction to other boids</h3>
+            <p>Each boid attempts to:</p>
+            <ul>
+                <li>Stay a certain distance from other boids</li>
+                <li>Match velocity with that of nearby boids</li>
+                <li>Move towards the centre of nearby boids</li>
+            </ul>
+            <br/>
+            <h3>Boid affectors</h3>
+            <p>Affectors are objects placed in the scene which influence the movement of a boid which enters its range. There are currently three types of affectors:</p>
+            <ul>
+                <li>Attractor - pulls boids within its range into its centre</li>
+                <li>Repulsor - repels boids that come within its range</li>
+                <li>Pusher - pushes boids that come within its range in a predefined direction</li>
+            </ul>
+            <br/>
+            <h3>Cursor follow</h3>
+            <p>Boids may be set to follow a 3D target. In the demo, this is controlled by the player's mouse position.</p>
+        </div>
+    
+        <div id="project-implementation">
+            <h2>Implementation</h2>
+            <h3>GPU flocking</h3>
+            <p>The boids' flocking behaviour is implemented using compute shaders; this allows the behaviour of many boids to be calculated in parallel, and provides a significant performance increase over a typical CPU-based implementation.</p>
+            <br/>
+            <h3>Batched flocking</h3>
+            <p>This is a variant of the basic GPU flocking which divides the flock into batches of boids and executes each batch on consecutive frames; thus, the entire flock is updated over n frames, where n is the number of batches the flock is divided into. With large flocks, and when the number of batches is kept small (&lt;8 frames is good) this method provides a great performance boost with no discernible impact to boid behaviour.</p>
+        </div>
+        
+        <div id="project-performance">
+            <h2>Performance</h2>
+            <p>In informal testing, using an Nvidia RTX 2060 GPU, this implementation achieves around 60 frames per second on a flock of ~30000 boids without batching, and around 100 frames per second with batching over 4 frames.</p>
+        </div>
+    </div>
+    
+    <footer>
+    <p>Christopher Kirkham, 2020</p>
+    </footer>
+
+</body>
+</html>

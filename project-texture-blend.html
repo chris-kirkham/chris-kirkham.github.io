@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<title>Christopher Kirkham</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&family=Fredoka+One&family=Spartan&family=Vollkorn">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+    @import url('./styles.css');
+</style>
+
+<body>
+    <div class="content">
+        <div id="project-video">
+            <video playsinline autoplay muted loop width="100%"><source src="../images/blend-textures-video.mp4" type="video/mp4"></video>
+        </div>   
+        
+        <div id="project-heading">
+            <h1 style="font-size: 54pt;">Texture blend shader</h1>
+            <p>Full-featured heightmap-based texture blend shader for Unity, featuring parallax occlusion mapping and an in-editor blend painting tool.</p>
+        </div>
+
+        <div id="project-links">
+            <div style="text-align: center"><a href="https://github.com/chris-kirkham/texture-blend-with-parallax-mapping">Source on Github</a></div>
+        </div>
+        
+        <div id="project-about">
+            <h2>About</h2>
+            <p id="project-page-subheading">This is a Unity implementation of a shader and complementary editor tool which allows for heightmap-based blending of up to four PBR textures on a single material. The shader also includes options for parallax mapping, including parallax occlusion mapping.
+            <br/>
+            The BlendPaint editor utility allows the user to blend textures from within the unity editor using a painting tool.</p>
+        </div>
+    
+        <div id=project-features>
+        
+        </div>
+        
+        <div id="project-directions">
+            <h2>Features</h2>
+            <h3>Texture blending</h3>
+            <p>The shader blends between textures using their heightmap data, with higher textures blending over lower ones. This allows for convincing blending behaviour - for example, a dirt texture blended with a tile texture may see dirt appearing in the cracks between tiles, but not over the tiles themselves.</p>
+            <br/>
+            <h3>Parallax Mapping</h3>
+            <p>Three types of parallax mapping are supported, each increasing in quality and performance cost:</p>
+            <h5>Parallax offset mapping</h5>
+            <p>The simplest type of parallax mapping; cheap but low-quality. Noticeable artifacts at shallow viewing angles.</p>
+            <br/>
+            <h5>Iterative parallax mapping</h5>
+            <p>Parallax offset mapping applied multiple times. May produce "good enough" results on textures with small height differences. Again, noticeable artifacts at shallow viewing angles.</p>
+            <br/>
+            <h5>Parallax occlusion mapping</h5>
+            <p>Much more computationally expensive, but far nicer results than either of the other methods. Produces a convincing impression of depth even with relatively strong height differences and at shallow viewing angles. Artifacts still noticeable at extreme angles and close up.</p>
+            <br/>
+            <h3>BlendPaint tool</h3>
+            <p>Included is an editor tool - BlendPaint - which allows for painting directly onto a material's blend map from the Unity editor. This enables very fast </p>
+            <br/>
+        </div>
+    
+        <div id="project-implementation">
+            <h2>Implementation</h2>
+            <h3>Texture blending</h3>
+            <p>Blend maps tell the shader how to blend each texture. Each colour channel represents one texture, in this format:</p>
+            <ul>
+                <li>Red - texture 1</li>
+                <li>Green - texture 2</li>
+                <li>Blue - texture 3</li>
+                <li>"Remaining black" - base texture</li>
+            </ul>
+            <p>Any pixel which is not wholly red, green, or blue (or a combination) will allow some of the base texture to appear. For example, a completely black (0, 0, 0) blend map will only show the base texture; a completely red (1, 0, 0) blend map will only show texture 1; a half-red blend map (0.5, 0, 0) will blend the base texture and texture 1 in equal proportion (taking into account their heightmaps).</p>
+            <br/>
+            <h3>HRMA maps</h3>
+            <p>The texture blending shader uses HRMA (Height, Roughness, Metallic, ambient occlusion) maps to save on space and GPU sampler usage. Since each of these maps uses only one colour channel, they are packed into a single texture in the following channel order:</p>
+            <ul>
+                <li>Red - height</li>
+                <li>Green - roughness</li>
+                <li>Blue - metalness</li>
+                <li>Alpha - ambient occlusion</li>
+            </ul>
+            <br/>
+        </div>
+    </div>
+    
+    <footer>
+    <p>Christopher Kirkham, 2020</p>
+    </footer>
+
+</body>
+</html>

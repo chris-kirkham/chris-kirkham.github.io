@@ -1,0 +1,270 @@
+:root {
+    /* light theme */
+    --bg-colour: #ffffff;
+    --text-colour: #111111;
+    --accent-colour: #cccc00;
+    
+    /* dark theme */
+    /*
+    --bg-colour: #1a1515;
+    --text-colour: azure;
+    --accent-colour: bisque;
+    */
+    
+    --header-font: 'Spartan', serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-colour);
+}
+
+h1 {
+    text-align: center;
+    font-size: 108pt;
+    font-family: var(--header-font);
+    color: var(--accent-colour);
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    text-align: center;
+    /*font-size: 42pt; */
+    font-size: 36pt;
+    font-family: var(--header-font);
+    color: var(--text-colour);
+    padding-bottom: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+    border-bottom: 1pt solid var(--accent-colour);
+}
+
+h3 {
+    text-align: left;
+    font-size: 28pt;
+    font-family: var(--header-font);
+    color: var(--text-colour);
+    line-height: 24pt;
+    margin-top: 0px;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+   text-align: left;
+    font-size: 20pt;
+    font-family: var(--header-font);
+    color: var(--text-colour);
+    line-height: 18pt;
+    margin-top: 0px;
+    margin-bottom: 0.5rem; 
+}
+
+h5 {
+   text-align: left;
+    font-size: 16pt;
+    font-family: var(--header-font);
+    color: var(--text-colour);
+    line-height: 18pt;
+    margin-top: 0px;
+    margin-bottom: 0rem; 
+}
+
+p {
+    /* font-size: 16pt; */
+    font-size: 14pt;
+    font-family: var(--body-font);
+    font-weight: 300;
+    color: var(--text-colour);
+    line-height: 24pt;
+    margin-top: 0rem;
+}
+
+/* https://stackoverflow.com/questions/2204634/how-to-disable-automatic-links-coloring-without-selecting-a-color */
+a {
+    font-size: 20pt;
+    font-family: var(--body-font);
+    font-weight: 700;
+    color: var(--accent-colour);
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0rem;
+}
+
+li {
+    /* font-size: 16pt; */
+    font-size: 14pt;
+    font-family: var(--body-font);
+    font-weight: 300;
+    color: var(--text-colour);
+    line-height: 24pt;
+    margin-top: 0rem;
+}
+
+footer {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+footer > p {
+    text-align: right;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem;
+    max-width: 1024px;
+}
+
+.portfolio-image-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 2rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)) */;
+    grid-template-columns: 3fr 5fr;
+}
+
+@media only screen and (max-width: 700px) {
+    .portfolio-image-grid {
+        display: grid;
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+        grid-template-columns: 1fr; 
+    }
+}
+
+.portfolio-image {
+    
+}
+
+.portfolio-image > img {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    box-shadow: -0.1rem 0.1rem 0px rgba(0,0,0,0.06);
+}
+
+.portfolio-image > video {
+    display: block;
+    width: 100%;
+    max-height: 100%;
+    box-shadow: -0.1rem 0.1rem 0px rgba(0,0,0,0.06);
+}
+
+.portfolio-desc {
+    padding: 1rem;
+}
+
+.project-link {
+    /*
+    float: right;
+    margin-left: 2rem;
+    */
+    float: left;
+    margin-right: 2rem;
+}
+
+.project-languages-used {
+    text-align: justify;
+}
+
+.skills-item {
+
+}
+
+.skills-item > p {
+    font-size: 16pt;
+    text-align: center;
+}
+
+.contact-items-grid {
+    display: grid;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-item{
+    margin: auto;
+}
+
+#full-width-header {
+    /* background: rgb(255,247,214);
+    background: linear-gradient(180deg, rgba(255,247,214,1) 0%, rgba(255,210,150,0.5) 50%, rgba(1, 1, 1, 0) 100%); */
+    background: linear-gradient(180deg, rgba(255,247,214,0) 0%, rgba(255,210,150,0.2) 50%, var(--bg-colour) 100%), url(images/texture-blend-main.png);
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 4rem;
+}
+
+#header-name {
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 40vh;
+    padding-bottom: 0px;
+}   
+
+#subheading {
+    font-size: 18pt;
+    text-align: center;
+    color: var(--accent-colour);
+    margin: auto;
+    max-width: 50%;
+}
+
+#project-page-subheading {
+    font-size: 18pt;
+    text-align: center;
+    margin: auto;
+}
+
+#about-skills-grid {
+    display: grid;
+    grid-column-gap: 4rem;
+    grid-template-rows: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+#skills-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(64px, 1fr));
+    margin-top: 2rem;
+    padding: 1rem;
+    place-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    #skills-grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 1fr); 
+        margin-top: 1rem;
+        padding: 1rem;
+        place-items: center;
+
+    }
+}
+
+#project-video {
+}
+
+#project-video > video {
+    width = 100%;
+}
+
+#footer {
+    
+}
+
+
+

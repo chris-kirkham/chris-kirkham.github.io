@@ -14,7 +14,7 @@
 
 <body>
     <div id="full-width-header">
-        <h1 id="header-name">Christopher Kirkham</h1>
+        <h1 id="header-name" style="color: var(--bg-colour);">Christopher Kirkham</h1>
         <p id="subheading">Software development, AI, and music. BSc Hons Computer Science with Artificial Intelligence, University of Nottingham.</p>
     </div>
     
@@ -25,8 +25,8 @@
                 <p>Hello! I am a graduate in Computer Science with Artificial Intelligence (BSc Hons) from the University of Nottingham. 
                 I am interested in AI, computer graphics, game development, and really anything which leverages the unique power of the computer in a creative way.</p>
 
-                <p>As well as computing, I am passionate about music - I’ve been playing piano and other instruments both solo and in ensembles since I was a child, and enjoy composing my own music.
-                You can find all my personal projects at https://github.com/chris-kirkham/, and email me at chris.kirkham11@gmail.com.</p>
+                <p>I am also passionate about music - I’ve been playing piano and other instruments both solo and in ensembles since I was a child, and enjoy composing my own music.
+                    You can find all my personal projects at <a href=https://github.com/chris-kirkham>https://github.com/chris-kirkham/</a>, and email me at <a href="mailto:chris.kirkham11@gmail.com">chris.kirkham11@gmail.com</a>.</p>
             </div>
 
             <div id="skills">
@@ -62,14 +62,14 @@
             <div class="portfolio-image-grid">
                 <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/boids-video.mp4" type="video/mp4"></video></div>
                 <div class="portfolio-desc">
-                    <h3>GPU Boids</h3>
+                    <h3 href="project-gpu-boids.html">GPU Boids</h3>
                     <p>An implementation of the Boids flocking algorithm for Unity. Utilises the GPU to provide significantly improved performance vs. a typical CPU-based implementation.</p>
                     <a class="project-link" href="project-gpu-boids.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/boids">Github</a>
                 </div>
-                <div class="portfolio-image"><img src="images/texture-blend-gif-480.gif"></div>
+                <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/blend-textures-video.mp4" type="video/mp4"></video></div>
                 <div class="portfolio-desc">
                     <h3>Texture blending shader</h3>
-                    <p>Full-featured heightmap-based texture blend shader for Unity, featuring parallax occlusion mapping and an in-editor blend painting tool.</p>
+                    <p>A full-featured heightmap-based texture blend shader for Unity, featuring parallax occlusion mapping and an in-editor blend painting tool.</p>
                     <a class="project-link" href="project-texture-blend.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/texture-blend-with-parallax-mapping">Github</a>
                 </div>
                 <!--
@@ -90,26 +90,30 @@
                     <a class="project-link" href="project-third-person-camera.html">Details</a> <a class="project-link" href="#">Github</a>
                 </div>
                 -->
-                <div class="portfolio-image">
-                    <img src="images/vector-field-creator-gif-480.gif">
-                </div>
+                <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/vector-field-creator-video.mp4" type="video/mp4"></video></div>
                 <div class="portfolio-desc">
-                    <h3>Vector field creator</h3>
-                    <p>Unity editor tool for the creation of dynamic vector fields, to simulate wind, water flow etc.</p>
+                    <h3>Vector fields</h3>
+                    <p>A vector field system for Unity, and editor tool for the creation of vector field data</p>
                     <a class="project-link" href="project-vector-field-creator.html">Details</a> <a class="project-link" href="#">Github</a>
                 </div>
             </div>
-            <h2 style="text-align: left; font-size: 28pt">Student work</h2>
-            <h4 style="line-height: 24pt;">Undergraduate dissertation: <i>Dynamic Emotion Recognition of MIDI Music using Recurrent Neural Networks</i></h4>
-            <a class="project-link" href="https://github.com/chris-kirkham/cs-dissertation">Github</a>
             
+            <div id="student-work">
+                <h2>Student work</h2>
+                <h4 style="line-height: 24pt;">Undergraduate dissertation: <i>Dynamic Emotion Recognition of MIDI Music using Recurrent Neural Networks</i></h4>
+                <p style="margin-bottom: 0px;">Undergraduate dissertation project for Computer Science with Artificial Intelligence BSc (hons) (2018), University of Nottingham. Labels emotional content of a given MIDI sequence on a continuous spectrum.</p>
+                <a class="project-link" href="https://github.com/chris-kirkham/cs-dissertation">Github</a>
+                <br/><br/><br/><br/>
+                <h4 style="line-height: 24pt;">Student project: Multiplayer game in Java</h4>
+                <p>A year-long student project as part of a team of six; developed a 2D multiplayer action game in Java, as well as comprehensive documentation, using an agile development methodology.</p>
+            </div>
         </div>
         
         <div id="contact">
             <h2>Contact Me</h2>
             <div class="contact-items-grid">
-                <div class="contact-item"><a href="#">email</a></div>
-                <div class="contact-item"><a href="#">github</a></div>
+                <div class="contact-item"><a href="mailto:chris.kirkham11@gmail.com">email</a></div>
+                <div class="contact-item"><a href="https://github.com/chris-kirkham/">github</a></div>
             </div>
         </div>
         

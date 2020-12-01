@@ -2,7 +2,7 @@
     /* light theme */
     --bg-colour: #ffffff;
     --text-colour: #111111;
-    --accent-colour: #cccc00;
+    --accent-colour: #ccaaaa;
     
     /* dark theme */
     /*
@@ -31,8 +31,7 @@ h1 {
 
 h2 {
     text-align: center;
-    /*font-size: 42pt; */
-    font-size: 36pt;
+    font-size: 28pt;
     font-family: var(--header-font);
     color: var(--text-colour);
     padding-bottom: 1rem;
@@ -43,7 +42,7 @@ h2 {
 
 h3 {
     text-align: left;
-    font-size: 28pt;
+    font-size: 24pt;
     font-family: var(--header-font);
     color: var(--text-colour);
     line-height: 24pt;
@@ -53,7 +52,7 @@ h3 {
 
 h4 {
    text-align: left;
-    font-size: 20pt;
+    font-size: 16pt;
     font-family: var(--header-font);
     color: var(--text-colour);
     line-height: 18pt;
@@ -63,7 +62,7 @@ h4 {
 
 h5 {
    text-align: left;
-    font-size: 16pt;
+    font-size: 14pt;
     font-family: var(--header-font);
     color: var(--text-colour);
     line-height: 18pt;
@@ -72,8 +71,7 @@ h5 {
 }
 
 p {
-    /* font-size: 16pt; */
-    font-size: 14pt;
+    font-size: 12pt;
     font-family: var(--body-font);
     font-weight: 300;
     color: var(--text-colour);
@@ -85,9 +83,14 @@ p {
 a {
     font-size: 20pt;
     font-family: var(--body-font);
-    font-weight: 700;
+    font-weight: 400;
     color: var(--accent-colour);
     text-decoration: none;
+}
+
+p > a {
+    font-size: 12pt; 
+    font-weight: 400;
 }
 
 ul {
@@ -95,8 +98,7 @@ ul {
 }
 
 li {
-    /* font-size: 16pt; */
-    font-size: 14pt;
+    font-size: 12pt;
     font-family: var(--body-font);
     font-weight: 300;
     color: var(--text-colour);
@@ -118,7 +120,8 @@ footer > p {
 .content {
     margin-left: auto;
     margin-right: auto;
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     max-width: 1024px;
 }
 
@@ -131,17 +134,13 @@ footer > p {
     grid-template-columns: 3fr 5fr;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1024px) {
     .portfolio-image-grid {
         display: grid;
         grid-column-gap: 0.5rem;
         grid-row-gap: 0.5rem;
         grid-template-columns: 1fr; 
     }
-}
-
-.portfolio-image {
-    
 }
 
 .portfolio-image > img {
@@ -162,6 +161,10 @@ footer > p {
     padding: 1rem;
 }
 
+.portfolio-desc > p {
+    margin-bottom: 0px;
+}
+
 .project-link {
     /*
     float: right;
@@ -180,7 +183,7 @@ footer > p {
 }
 
 .skills-item > p {
-    font-size: 16pt;
+    font-size: 14pt;
     text-align: center;
 }
 
@@ -215,17 +218,23 @@ footer > p {
 }   
 
 #subheading {
-    font-size: 18pt;
+    font-size: 24pt;
     text-align: center;
-    color: var(--accent-colour);
+    color: var(--bg-colour);
     margin: auto;
     max-width: 50%;
 }
 
 #project-page-subheading {
-    font-size: 18pt;
+    font-size: 16pt;
     text-align: center;
     margin: auto;
+    margin-bottom: 1rem;
+}
+
+#project-page-links {
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 #about-skills-grid {
@@ -236,9 +245,8 @@ footer > p {
 
 #skills-grid {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 0rem;
     grid-template-columns: repeat(3, minmax(64px, 1fr));
-    margin-top: 2rem;
     padding: 1rem;
     place-items: center;
 }
@@ -246,9 +254,8 @@ footer > p {
 @media only screen and (max-width: 700px) {
     #skills-grid {
         display: grid;
-        grid-gap: 1rem;
+        grid-gap: 0rem;
         grid-template-columns: repeat(3, 1fr); 
-        margin-top: 1rem;
         padding: 1rem;
         place-items: center;
 
@@ -256,6 +263,7 @@ footer > p {
 }
 
 #project-video {
+    margin-bottom: 2rem;
 }
 
 #project-video > video {

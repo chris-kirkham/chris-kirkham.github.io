@@ -15,6 +15,10 @@
     --body-font: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background: var(--bg-colour);
@@ -22,7 +26,8 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 108pt;
+    /* font-size: 108pt; */
+    font-size: 15vmin;
     font-family: var(--header-font);
     color: var(--accent-colour);
     margin-top: 0px;
@@ -223,6 +228,16 @@ footer > p {
     color: var(--bg-colour);
     margin: auto;
     max-width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+    #subheading {
+        font-size: 24pt;
+        text-align: center;
+        color: var(--bg-colour);
+        margin: auto;
+        max-width: 75%;
+    }
 }
 
 #project-page-subheading {

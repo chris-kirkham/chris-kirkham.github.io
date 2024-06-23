@@ -14,23 +14,23 @@
 
 <body>
     <div id="full-width-header">
-        <h1 id="header-name" style="color: var(--bg-colour);">Christopher Kirkham</h1>
-        <p id="subheading">Game development, AI, and graphics. BSc Hons Computer Science with Artificial Intelligence, University of Nottingham.</p>
-        <br/>
-        <a href="#about"><h1 style="margin-top: 4rem; font-size: 32pt; color: var(--bg-colour);">▼</h1></a>
-
+        <h1 id="header-name">Christopher Kirkham</h1>
+        <p id="subheading">Creating software, graphics, and music.</p>
     </div>
     
     <div class="content">
         <div id="about-skills-grid">
             <div id="about">
                 <h2>About Me</h2>
-                <p>Hello! I am a graduate in Computer Science with Artificial Intelligence (BSc Hons) from the University of Nottingham. 
-                I am interested in AI, computer graphics, game development, and really anything which leverages the unique power of the computer in a creative way.</p>
+                <p>Hello! I am a programmer, specialising in game and real-time application development in Unity, and composer.
+                As a programmer, I am interested in games, graphics, AI, and really anything which leverages the power of the computer in a creative way.
+				As a composer, I love utilising both traditional instruments and electronics to create emotive, challenging music. 
+				I'm still finding ways to combine the two.</p>
 
-                <p>I am also passionate about music - I’ve been playing piano and other instruments both solo and in ensembles since I was a child, and enjoy composing my own music.</p>
-                
-                <p>You can find all my personal projects at <a href=https://github.com/chris-kirkham>https://github.com/chris-kirkham/</a>, and email me at <a href="mailto:chris.kirkham11@gmail.com">chris.kirkham11@gmail.com</a>.</p>
+                <p>I have been working as a generalist programmer at <a href="https://coatsink.com/">Coatsink Software</a> since March 2021. </p>
+				
+                <p>You can find all my personal projects at <a href=https://github.com/chris-kirkham/>github.com/chris-kirkham</a>, 
+				and email me at <a href=mailto:chris.kirkham11@gmail.com.>chris.kirkham11@gmail.com</a></p>
             </div>
 
             <div id="skills">
@@ -60,28 +60,50 @@
             </div>
             -->
         </div>
+		
+		<div id="experience">
+			<h2>Experience</h2>
+			<p>Programmer at <a href="https://coatsink.com/">Coatsink Software</a><br/><i>March 2021 to present</i></p>
+			<div id="coatsink list" style="padding-left: 1rem">
+				<list>
+					<li><b>Gameplay</b> - prototyping, iterating on, and finalising new gameplay features based on design requirements and feedback</li>
+					<li><b>UI</b> - using Unity’s IMGUI and UI Toolkit to prototype, iterate on, and finalise UI elements based on design requirements and feedback</li>
+					<li><b>VR</b> - implementing VR interactions in Unity for the Meta Quest 2 hardware.</li>
+					<li><b>Shaders</b> - creating shaders for Unity’s Universal Rendering Pipeline in HLSL and Shader Graph; creating compute shaders in HLSL</li>
+					<li><b>Tools</b> - developing tools within Unity to aid development workflows; liaising with different disciplines (art, design, audio, QA) to gather
+					requirements and feedback</li>
+					<li><b>Optimisation</b> - Optimising production code with the help of tools including the Unity profiler, frame debugger, and RenderDoc</li>
+				</list>
+			</div>
+		</div>
+		
+		<div id="Education">
+		<h2>Education</h2>
+		<p><b>Trinity Laban Conservatoire of Music and Dance</b> - MMus Composition <br/><i>September 2022 to July 2024 (ongoing)</i></p>
+		<p><b>University of Nottingham</b> - BSc (hons) Computer Science with AI (2:2) <br/><i>September 2014 to July 2018</i></p>
+		</div>
         
         <div id="portfolio">
             <h2>Projects</h2>
             <div class="portfolio-image-grid">
                 <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/boids-video.mp4" type="video/mp4"></video></div>
                 <div class="portfolio-desc">
-                    <h3 href="project-gpu-boids.html">GPU Boids</h3>
+                    <h3>GPU Boids</h3>
                     <p>An implementation of the Boids flocking algorithm for Unity. Utilises the GPU to provide significantly improved performance vs. a typical CPU-based implementation.</p>
-                    <a class="project-link" href="project-gpu-boids.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/boids/tree/gpu-flocking">Source</a>
+                    <a class="project-link" href="project-gpu-boids.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/boids">Github</a>
                 </div>
-                <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/blend-textures-video.mp4" type="video/mp4"></video></div>
+                <div class="portfolio-image"><img src="images/texture-blend-gif-480.gif"></div>
                 <div class="portfolio-desc">
                     <h3>Texture blending shader</h3>
-                    <p>A heightmap-based texture blend shader for Unity, featuring parallax occlusion mapping and an in-editor blend painting tool.</p>
-                    <a class="project-link" href="project-texture-blend.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/texture-blend-with-parallax-mapping">Source</a>
+                    <p>Full-featured heightmap-based texture blend shader for Unity, featuring parallax occlusion mapping and an in-editor blend painting tool.</p>
+                    <a class="project-link" href="project-texture-blend.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/texture-blend-with-parallax-mapping">Github</a>
                 </div>
                 <!--
                 <div class="portfolio-image"><img src="images/noise-tex-generator-gif-480.gif"></div>
                 <div class="portfolio-desc">
                     <h3>Noise texture generator</h3>
                     <p>Generates 2D or 3D noise textures, and can save them as image files or Unity assets.</p>
-                    <a class="project-link" href="#">Demo</a> <a class="project-link" href="#">Source</a>
+                    <a class="project-link" href="#">Demo</a> <a class="project-link" href="#">Github</a>
                 </div>
                 -->
                 <!--
@@ -91,33 +113,29 @@
                 <div class="portfolio-desc">
                     <h3>Third-person camera controller</h3>
                     <p>Full-featured third-person camera controller for Unity with robust collision/occlusion detection.</p>
-                    <a class="project-link" href="project-third-person-camera.html">Details</a> <a class="project-link" href="#">Source</a>
+                    <a class="project-link" href="project-third-person-camera.html">Details</a> <a class="project-link" href="#">Github</a>
                 </div>
                 -->
-                <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/vector-field-creator-video.mp4" type="video/mp4"></video></div>
+                <div class="portfolio-image">
+                    <img src="images/vector-field-creator-gif-480.gif">
+                </div>
                 <div class="portfolio-desc">
-                    <h3>Vector fields</h3>
-                    <p>A vector field system for Unity, and editor tool for the creation of vector field data</p>
-                    <a class="project-link" href="project-vector-field-creator.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/vector-field-creator">Source</a>
+                    <h3>Vector field creator</h3>
+                    <p>Unity editor tool for the creation of dynamic vector fields, to simulate wind, water flow etc.</p>
+                    <a class="project-link" href="project-vector-field-creator.html">Details</a> <a class="project-link" href="#">Github</a>
                 </div>
             </div>
+            <h2>Student work</h2>
+            <p><b>Undergraduate dissertation: </b><i>Dynamic Emotion Recognition of MIDI Music using Recurrent Neural Networks</i>
+            <a class="project-link" href="https://github.com/chris-kirkham/cs-dissertation">Github</a></p>
             
-            <div id="student-work">
-                <h2>Student work</h2>
-                <h4 style="line-height: 24pt;">Undergraduate dissertation: <i>Dynamic Emotion Recognition of MIDI Music using Recurrent Neural Networks</i></h4>
-                <p style="margin-bottom: 0px;">Undergraduate dissertation project for Computer Science with Artificial Intelligence BSc (hons) (2018), University of Nottingham. Labels emotional content of a given MIDI sequence on a continuous spectrum.</p>
-                <a class="project-link" href="https://github.com/chris-kirkham/cs-dissertation">Source</a>
-                <br/><br/><br/><br/>
-                <h4 style="line-height: 24pt;">Student project: Multiplayer game in Java</h4>
-                <p>A year-long student project as part of a team of six; developed a 2D multiplayer action game in Java, as well as comprehensive documentation, using an agile methodology.</p>
-            </div>
         </div>
         
         <div id="contact">
             <h2>Contact Me</h2>
             <div class="contact-items-grid">
-                <div class="contact-item"><a href="mailto:chris.kirkham11@gmail.com">email</a></div>
-                <div class="contact-item"><a href="https://github.com/chris-kirkham/">github</a></div>
+                <div class="contact-item"><a href="#">email</a></div>
+                <div class="contact-item"><a href="#">github</a></div>
             </div>
         </div>
         

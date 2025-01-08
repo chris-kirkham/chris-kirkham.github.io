@@ -1,18 +1,18 @@
 :root {
-    /* light theme */
+    --header-font: 'Spartan', serif;
+    --body-font: 'Open Sans', sans-serif;
+	
+	/* light theme */
     --bg-colour: #ffffff;
-    --text-colour: #111111;
-    --accent-colour: #cccc00;
-    
+	--text-colour: #111111;
+    --accent-colour: #dddd00;
+	
     /* dark theme */
-    /*
+	/*
     --bg-colour: #1a1515;
     --text-colour: azure;
     --accent-colour: bisque;
-    */
-    
-    --header-font: 'Spartan', serif;
-    --body-font: 'Open Sans', sans-serif;
+	*/
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 108pt;
+    font-size: 48pt;
     font-family: var(--header-font);
     color: var(--accent-colour);
     margin-top: 0px;
@@ -32,7 +32,7 @@ h1 {
 h2 {
     text-align: center;
     /*font-size: 42pt; */
-    font-size: 36pt;
+    font-size: 32pt;
     font-family: var(--header-font);
     color: var(--text-colour);
     padding-bottom: 1rem;
@@ -43,47 +43,47 @@ h2 {
 
 h3 {
     text-align: left;
-    font-size: 28pt;
+    font-size: 24pt;
     font-family: var(--header-font);
     color: var(--text-colour);
-    line-height: 24pt;
+    line-height: 22pt;
     margin-top: 0px;
     margin-bottom: 0.5rem;
 }
 
 h4 {
    text-align: left;
-    font-size: 20pt;
+    font-size: 18pt;
     font-family: var(--header-font);
     color: var(--text-colour);
-    line-height: 18pt;
+    line-height: 16pt;
     margin-top: 0px;
     margin-bottom: 0.5rem; 
 }
 
 h5 {
    text-align: left;
-    font-size: 16pt;
+    font-size: 14pt;
     font-family: var(--header-font);
     color: var(--text-colour);
-    line-height: 18pt;
+    line-height: 16pt;
     margin-top: 0px;
     margin-bottom: 0rem; 
 }
 
 p {
     /* font-size: 16pt; */
-    font-size: 14pt;
+    font-size: 12pt;
     font-family: var(--body-font);
     font-weight: 300;
     color: var(--text-colour);
-    line-height: 24pt;
+    /* line-height: 24pt; */ 
     margin-top: 0rem;
 }
 
 /* https://stackoverflow.com/questions/2204634/how-to-disable-automatic-links-coloring-without-selecting-a-color */
 a {
-    font-size: 20pt;
+    font-size: 14pt;
     font-family: var(--body-font);
     font-weight: 700;
     color: var(--accent-colour);
@@ -96,11 +96,11 @@ ul {
 
 li {
     /* font-size: 16pt; */
-    font-size: 14pt;
+    font-size: 12pt;
     font-family: var(--body-font);
     font-weight: 300;
     color: var(--text-colour);
-    line-height: 24pt;
+    line-height: 22pt;
     margin-top: 0rem;
 }
 
@@ -126,9 +126,9 @@ footer > p {
     margin-top: 1rem;
     display: grid;
     grid-column-gap: 0.5rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 0.5rem;
     /* grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)) */;
-    grid-template-columns: 3fr 5fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media only screen and (max-width: 700px) {
@@ -140,8 +140,18 @@ footer > p {
     }
 }
 
+.portfolio-image-grid-item {
+    padding: 1rem;
+	display: grid;
+	grid-template-areas: 
+		"image"
+		"description"
+		"links";
+}
+
 .portfolio-image {
-    
+	grid-area: image;
+    z-index: 0;
 }
 
 .portfolio-image > img {
@@ -158,29 +168,52 @@ footer > p {
     box-shadow: -0.1rem 0.1rem 0px rgba(0,0,0,0.06);
 }
 
-.portfolio-desc {
-    padding: 1rem;
+.portfolio-image-overlay {
+	grid-area: image;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	font-size: 2rem;
+    font-family: var(--header-font);
+    color: var(--text-colour);
+	text-align: center;
+	opacity: 100%;
+	z-index: 1;
 }
 
-.project-link {
+.portfolio-image-overlay : hover {
+	
+}
+
+.portfolio-item-header {
+}
+
+.portfolio-desc {
+	grid-area: description;
+}
+
+.portfolio-desc > p {
+	margin: 0px;
+    line-height: auto;
+}
+
+.portfolio-link {
     /*
     float: right;
     margin-left: 2rem;
     */
+	
+	grid-area: links;
     float: left;
     margin-right: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .project-languages-used {
     text-align: justify;
 }
 
-.skills-item {
-
-}
-
 .skills-item > p {
-    font-size: 16pt;
     text-align: center;
 }
 
@@ -198,9 +231,9 @@ footer > p {
 #full-width-header {
     /* background: rgb(255,247,214);
     background: linear-gradient(180deg, rgba(255,247,214,1) 0%, rgba(255,210,150,0.5) 50%, rgba(1, 1, 1, 0) 100%); */
-    background: linear-gradient(180deg, rgba(255,247,214,0) 0%, rgba(255,210,150,0.2) 50%, var(--bg-colour) 100%), url(images/texture-blend-main.png);
+    background: linear-gradient(180deg, rgba(255,247,214,0) 0%, rgba(255,210,150,0.2) 70%, var(--bg-colour) 100%), url(images/texture-blend-main.png);
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
     margin: 0px;
     padding-top: 0px;
     padding-bottom: 4rem;
@@ -210,12 +243,12 @@ footer > p {
     margin: auto;
     padding-left: 0px;
     padding-right: 0px;
-    padding-top: 40vh;
+    padding-top: 20vh;
     padding-bottom: 0px;
 }   
 
 #subheading {
-    font-size: 18pt;
+    font-size: 24pt;
     text-align: center;
     color: var(--accent-colour);
     margin: auto;

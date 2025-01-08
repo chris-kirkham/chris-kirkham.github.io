@@ -15,68 +15,109 @@
 <body>
     <div id="full-width-header">
         <h1 id="header-name">Christopher Kirkham</h1>
-        <p id="subheading">Unity developer - creating games, graphics, and music.</p>
+        <p id="subheading"><b>Game developer - gameplay, graphics, music.</b></p>
     </div>
     
     <div class="content">
         <div id="about-skills-grid">
             <div id="about">
                 <h2>About Me</h2>
-                <p>Hello! I am a programmer, specialising in game and real-time application development in Unity, and composer.
+                <p>Hello! I am a game programmer and composer.
                 As a programmer, I am interested in games, graphics, AI, and really anything which leverages the power of the computer in a creative way.
-				As a composer, I love utilising both traditional instruments and electronics to create emotive, challenging music. 
-				I'm still finding ways to combine the two.</p>
+				As a composer, I love using acoustic instruments and electronics to create emotive, challenging music.</p>
 
-                <p>I have been working as a generalist programmer at <a href="https://coatsink.com/">Coatsink Software</a> since March 2021. </p>
+                <p>I have been working as a Unity programmer at <a href="https://coatsink.com/">Coatsink Software</a> since March 2021. </p>
 				
                 <p>You can find all my personal projects at <a href=https://github.com/chris-kirkham/>github.com/chris-kirkham</a>, 
 				and email me at <a href=mailto:chris.kirkham11@gmail.com.>chris.kirkham11@gmail.com</a></p>
             </div>
+        </div>
 
         <div id="portfolio">
-            <h2>Projects</h2>
+            <h2>Personal projects</h2>
             <div class="portfolio-image-grid">
-                <div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="../images/boids-video.mp4" type="video/mp4"></video></div>
-                <div class="portfolio-desc">
-                    <h3>GPU Boids</h3>
-                    <p>An implementation of the Boids flocking algorithm for Unity. Utilises the GPU to provide significantly improved performance vs. a typical CPU-based implementation.</p>
-                    <a class="project-link" href="project-gpu-boids.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/boids">Github</a>
+				<div class="portfolio-image-grid-item">
+					<div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="images/boids-video.mp4" type="video/mp4"></video></div>
+					<div class="portfolio-image-overlay">GPU Boids</div>
+					<div class="portfolio-desc">
+						<p>Flocking simulation on the GPU using compute shaders. 
+						<a href="https://github.com/chris-kirkham/boids">Github</a></p>
+					</div>
+					<div class="portfolio-link">
+						<!--<a href="project-gpu-boids.html">Details</a>-->
+						
+					</div>
+				</div>
+				
+				<div class="portfolio-image-grid-item">
+					<div class="portfolio-image"><img src="images/texture-blend-gif-480.gif"></div>
+					<div class="portfolio-image-overlay">Texture Blend Shader/Tool</div>
+					<div class="portfolio-desc">
+						<p>Heightmap-based texture blending shader for Unity, with in-editor blend painting tool.
+						<a href="https://github.com/chris-kirkham/texture-blend-with-parallax-mapping">Github</a></p>
+					</div>
+					<div class="portfolio-link">
+						<!--<a href="project-texture-blend.html">Details</a>-->
+						
+					</div>
                 </div>
-                <div class="portfolio-image"><img src="images/texture-blend-gif-480.gif"></div>
-                <div class="portfolio-desc">
-                    <h3>Texture blending shader</h3>
-                    <p>Full-featured heightmap-based texture blend shader for Unity, featuring parallax occlusion mapping and an in-editor blend painting tool.</p>
-                    <a class="project-link" href="project-texture-blend.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/texture-blend-with-parallax-mapping">Github</a>
-                </div>
-                <!--
-                <div class="portfolio-image"><img src="images/noise-tex-generator-gif-480.gif"></div>
-                <div class="portfolio-desc">
-                    <h3>Noise texture generator</h3>
-                    <p>Generates 2D or 3D noise textures, and can save them as image files or Unity assets.</p>
-                    <a class="project-link" href="#">Demo</a> <a class="project-link" href="#">Github</a>
-                </div>
-                -->
-                <!--
-                <div class="portfolio-image">
-                    <img src="images/boids-main-anim.gif">
-                </div>
-                <div class="portfolio-desc">
-                    <h3>Third-person camera controller</h3>
-                    <p>Full-featured third-person camera controller for Unity with robust collision/occlusion detection.</p>
-                    <a class="project-link" href="project-third-person-camera.html">Details</a> <a class="project-link" href="#">Github</a>
-                </div>
-                -->
-                <div class="portfolio-image">
-                    <img src="images/vector-field-creator-gif-480.gif">
-                </div>
-                <div class="portfolio-desc">
-                    <h3>Vector field creator</h3>
-                    <p>Unity editor tool for the creation of dynamic vector fields, to simulate wind, water flow etc.</p>
-                    <a class="project-link" href="project-vector-field-creator.html">Details</a> <a class="project-link" href="https://github.com/chris-kirkham/vector-field-creator">Github</a>
-                </div>
+				
+				<div class="portfolio-image-grid-item">
+					<div class="portfolio-image"><img src="images/noise-tex-generator-gif-480.gif"></div>
+					<div class="portfolio-image-overlay">Noise Texture Generator</div>
+					<div class="portfolio-desc">
+						<p>Generates 2D or 3D noise textures, and can save them as image files or Unity assets. 
+						<a class="project-link" href="https://github.com/chris-kirkham/noise-texture-generator">Github</a></p>
+					</div>
+					<div class="portfolio-link">
+						<!--<a class="project-link" href="project-noise-tex-generator.html">Details</a>-->
+						
+					</div>
+				</div>
+
+				<div class="portfolio-image-grid-item">
+					<div class="portfolio-image"><img src="images/vector-field-creator-gif-480.gif"></div>
+					<div class="portfolio-image-overlay">Vector field creator</div>
+					<div class="portfolio-desc">
+						<p>Unity editor tool for the creation of dynamic vector fields to simulate wind, water flow etc. 
+						<a href="https://github.com/chris-kirkham/vector-field-creator">Github</a></p>
+					</div>
+					<div class="portfolio-link">
+						<!--<a href="project-vector-field-creator.html">Details</a>-->
+						
+					</div>
+				</div>
+
+				<div class="portfolio-image-grid-item">
+					<!--
+					<div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="images/boids-video.mp4" type="video/mp4"></video></div>-->
+					<div class="portfolio-image-overlay">Third-person camera controller</div>
+					<div class="portfolio-desc">
+						<p>Full-featured, highly configurable third-person camera controller for Unity. 
+						<a href="https://github.com/chris-kirkham/third-person-camera">Github</a></p>
+					</div>
+					<div class="portfolio-link">
+						<!--<a href="project-third-person-camera.html">Details</a>-->
+						
+					</div>
+				</div>
+				
+				<div class="portfolio-image-grid-item">
+					<!--
+					<div class="portfolio-image"><video playsinline autoplay muted loop width="100%"><source src="images/boids-video.mp4" type="video/mp4"></video></div>-->
+					<div class="portfolio-image-overlay">GPU Pathtracer</div>
+					<div class="portfolio-desc">
+						<p>Simple real-time GPU pathtracing in Unity using compute shaders. 
+						<a href="https://github.com/chris-kirkham/gpu-raytracing-in-a-weekend">Github</a></p>
+					</div>
+					<div class="portfolio-link">
+						<!--<a href="project-third-person-camera.html">Details</a>-->
+					</div>
+				</div>
             </div>
         </div>
 		
+		<!--
 		<div id="skills">
 			<h2>Skills</h2>
 			<div id="skills-grid">
@@ -94,43 +135,34 @@
 				<div class="skills-item"><p>AI</p></div>
 			</div>
 		</div>
-            
-            <!--
-            <div id="proficiencies">
-                <h2>Proficiencies</h2>
-                <p><b>I can code in: </b>C, C++, C#, Cg/HLSL, Python</p>
-                <p><b>I am proficient in: </b>Unity, Visual Studio, Git</p>
-                <p><b>Areas I'm strong in are: </b>Graphics, AI, Gameplay programming</p>
-            </div>
-            -->
-        </div>
+		-->
 		
 		<div id="experience">
 			<h2>Experience</h2>
-			<p>Programmer at <a href="https://coatsink.com/">Coatsink Software</a><br/><i>March 2021 to present</i></p>
+			<p>Programmer at <a href="https://coatsink.com/">Coatsink Software</a> <i>March 2021 to present</i></p>
 			<div id="coatsink list" style="padding-left: 1rem">
 				<list>
-					<li><b>Gameplay</b> - prototyping, iterating on, and finalising new gameplay features based on design requirements and feedback</li>
-					<li><b>UI</b> - using Unity’s IMGUI and UI Toolkit to prototype, iterate on, and finalise UI elements based on design requirements and feedback</li>
-					<li><b>VR</b> - implementing VR interactions in Unity for the Meta Quest 2 hardware.</li>
-					<li><b>Shaders</b> - creating shaders for Unity’s Universal Rendering Pipeline in HLSL and Shader Graph; creating compute shaders in HLSL</li>
-					<li><b>Tools</b> - developing tools within Unity to aid development workflows; liaising with different disciplines (art, design, audio, QA) to gather
+					<li><i>Gameplay</i> - prototyping, iterating on, and finalising new gameplay features based on design requirements and feedback</li>
+					<li><i>UI</i> - using Unity’s IMGUI and UI Toolkit to prototype, iterate on, and finalise UI elements based on design requirements and feedback</li>
+					<li><i>VR</i> - implementing VR interactions in Unity for the Meta Quest 2 hardware.</li>
+					<li><i>Shaders</i> - creating shaders for Unity’s Universal Rendering Pipeline in HLSL and Shader Graph; creating compute shaders in HLSL</li>
+					<li><i>Tools</i> - developing tools within Unity to aid development workflows; liaising with different disciplines (art, design, audio, QA) to gather
 					requirements and feedback</li>
-					<li><b>Optimisation</b> - Optimising production code with the help of tools including the Unity profiler, frame debugger, and RenderDoc</li>
+					<li><i>Optimisation</i> - Optimising production code with the help of tools including the Unity profiler, frame debugger, and RenderDoc</li>
 				</list>
 			</div>
 		</div>
 		
 		<div id="Education">
 		<h2>Education</h2>
-		<p><b>Trinity Laban Conservatoire of Music and Dance</b> - MMus Composition <br/><i>September 2022 to July 2024 (ongoing)</i></p>
-		<p><b>University of Nottingham</b> - BSc (hons) Computer Science with AI (2:2) <br/><i>September 2014 to July 2018</i></p>
+		<p><b>Trinity Laban Conservatoire of Music and Dance</b> - MMus Composition <i>(2022-2024)</i></p>
+		<p><b>University of Nottingham</b> - BSc (hons) Computer Science with AI (2:2) <i>(2014-2018)</i></p>
 		</div>
 		
 		<div id="Student work">
 		<h2>Student work</h2>
             <p><b>Undergraduate dissertation: </b><i>Dynamic Emotion Recognition of MIDI Music using Recurrent Neural Networks</i>
-            <a class="project-link" href="https://github.com/chris-kirkham/cs-dissertation">Github</a></p>
+            <br/><a class="project-link" href="https://github.com/chris-kirkham/cs-dissertation">github</a></p>
         </div>
 		
         <div id="contact">

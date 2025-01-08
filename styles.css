@@ -170,8 +170,7 @@ footer > p {
 
 .portfolio-image-overlay {
 	grid-area: image;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
+	padding-top: 0.5rem;
 	font-size: 2rem;
     font-family: var(--header-font);
     color: var(--text-colour);
